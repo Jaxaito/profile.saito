@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>自己紹介</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ </head>
+ <body>
+    <header id="header">
+            <h1 class="title">
+                <a href="index.html"><img src="img/title_w.png" alt=""></a>
+            </h1>
+        <button type="button" class="menu-btn">
+            <i class="fa-solid fa-ellipsis" aria-hidden="true"></i>
+          </button>
+          <div class="menu">
+            <div class="menu__item">TOP</div>
+            <div class="menu__item">PLOFILE</div>
+            <div class="menu__item">WORKS</div>
+            <div class="menu__item">CONTACT</div>
+          </div>
+    </header>
+    <main>
+        <section id="profile" class="wrapper fade-in fade-in-left">
+            <h2 class="sec-title">PLOFILE</h2>
+            <div class="about">
+                <div class="face">
+                    <img src="img/myface.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>齊藤奨太</h3>
+                    <ul>
+                        <li>神奈川県横浜市出身 1997年6月18日生</li>
+                        <li>2020年度多摩美術大学グラフィックデザイン学科卒<br>
+                        株式会社 トーシン産業に入社し、半年間DTPデザイナーとして働く。<br>
+                        その後、株式会社 弁天堂にてポスティングのアルバイトをしながらWebについての勉強を始める。</li>
+                        <li>スキル:Adobe Photoshop,illutrater,inDesign/HTML/CSS/Javascript</li>
+                        <li class="pow">HTML/CSS/Javascript 絶賛勉強中です！</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="wrapper fade-in fade-in-right">
+            <h2 class="sec-title">WORKS</h2>
+            <div class="twins">
+                <div class="webs">
+                    <h3>制作したWEBサイト</h3>
+                    <ul>
+                        <li><a href="https://jaxaito.github.io/jack.github.io/">1</a></li>
+                        <li><a href="https://jaxaito.github.io/port_2/">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                    </ul>
+                </div>
+                <div class="illust">
+                    <h3>イラストレーション</h3>
+                    <div class="grid">
+                        <div class="item">
+                            <a href="index_illust.html"><img src="img/bike/0005.jpg" alt=""></a>
+                            <a href="index_illust.html" class="btn">MOTORCYCLE</a>
+                        </div>
+                        <div class="item">
+                            <a href="index_illust.html"><img src="img/01.jpg" alt=""></a>
+                            <a href="index_illust.html" class="btn">POSTER</a>
+                        </div>
+                        <div class="item">
+                            <a href="slick_gallary/comic/index.html"><img src="img/comic/002.png" alt=""></a>
+                            <a href="slick_gallary/comic/index.html" class="btn">COMIC</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="wrapper">
+            <h2 class="sec-title">Contact</h2>
+            <form action="#" method="post">
+              <dl>
+                <dt><label for="name">NAME</label></dt>
+                <dd><input type="text" id="name" name="your-name"></dd>
+                <dt><label for="email">E-mail</label></dt>
+                <dd><input type="email" id="email" name="your-email"></dd>
+                <dt><label for="message">MESSAGE</label></dt>
+                <dd><textarea id="message" name="your-message"></textarea></dd>
+              </dl>
+              <div class="button"><input type="submit" value="送信"></div>
+            </form>
+          </section>
+    </main>
+    <footer class="wrapper">
+        <p>&copy;Shota Saito 2022</p>
+    </footer>
+<script src="js/main.js"></script>
+ </body>
