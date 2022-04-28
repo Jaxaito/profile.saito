@@ -290,7 +290,24 @@ h3 {
     text-align: center;
     margin-bottom: 40px;
   }
+  #works .twins {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #works .webs,
+  #works .illust {
+      width: 100%;
+  }
   #works .illust .grid {
     grid-template-columns: 1fr;
   }
+  #works .illust .grid .item {
+    background: black;
+  }
+  #works .grid .item .btn {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+  }
+
 }
