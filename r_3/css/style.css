@@ -1,0 +1,122 @@
+html {
+    font-size: 100%;
+}
+body {
+    width: 100%;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+body {
+    color: #2d2d2d;
+    font-family: 'Crimson Text',serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.logo {
+    width: 110px;
+    line-height: 1px;
+    margin-right: 50px;
+}
+.logo a {
+    display: block;
+}
+.content-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+.content-title-en {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+#mainvisual {
+    width: 90vw;
+    margin: 4% auto 0 auto;
+}
+#header {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    margin: 0 auto 30px auto;
+}
+#header ul {
+    display: flex;
+}
+#header ul li {
+    font-size: 0.85rem;
+    margin-right: 30px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.content .image {
+    width: 50%;
+}
+.content .text {
+    width: 50%;
+    padding: 0 7%;
+}
+#footer {
+    display: flex;
+    font-size: 0.875px;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+#footer .logo {
+    width: 110px;
+}
+@media screen and (max-width: 767px) {
+    .content-title {
+      font-size: 1.25rem;
+    }
+  
+    /*-------------------------------------------
+    Mainvisual
+    -------------------------------------------*/
+    #mainvisual {
+      width: 100%;
+      margin: 0;
+    }
+    /*
+    heightをvhで指定することで、画面の高さを基準にした高さになる
+    */
+    #mainvisual img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+    .header {
+        width: 100%;
+        padding: 20px 18px;
+    }
+    #work {
+        flex-direction: column-reverse;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content .text {
+        width: 100%;
+        padding: 0;
+    }
+}
