@@ -5,6 +5,9 @@ body {
     color: rgb(0, 0, 0);
     font-family: 'Alata', sans-serif;
 }
+main {
+  padding:0 4%;
+}
 li {
     list-style: none;
 }
@@ -13,10 +16,6 @@ a {
 }
 img {
     max-width: 100%;
-}
-h3 {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
 }
 .menu-btn{
   position: fixed;
@@ -82,27 +81,20 @@ h3 {
 }
 .sec-title {
   font-family: 'Heebo', sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
-  position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
 }
-.sec-title:after {
-  position: absolute;
-  content: '';
-  display: block;
-  left: calc(50% - 85px);
-  bottom: 7px;
-  width: 170px;
-  height: 6px;
-  background-color: #ff0000;
+.sec-title-a {
+  font-family: 'Heebo', sans-serif;
+  font-size: 5rem;
+  text-align: center;
 }
 .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0 auto 170px auto;
   text-align: center;
-  padding: 0 20px;
-  margin-bottom: 120px;
+  padding: 10 10px;
 }
 #header {
   padding: 20px 40px;
@@ -115,10 +107,10 @@ h3 {
 }
 #profile {
   margin-bottom: 120px;
-  position: relative;
 }
 #profile .about {
   display: flex;
+  justify-content: center;
 }
 #profile .text h3 {
   font-size: 1.5rem;
@@ -141,63 +133,30 @@ h3 {
   color: red;
 }
 #works .twins {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   margin-bottom: 120px;
 }
 #works .twins h3 {
-  font-size: 1.5rem;
-}
-#works .twins h3:after {
-  content: '';
-  display: block;
-  position: relative;
-  background: #ff0000;
-  height: 5px;
-  width: 140px;
-  left: calc(50% - 70px);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 #works .webs {
-  width: 47%;
+  width: 100%;
+  margin-bottom: 120px;
 }
 #works .illust {
-  width: 47%;
+  width: 100%;
+  margin-bottom: 120px;
 }
-#works .illust .grid{
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(3,1fr);
+#works .desc {
+  margin-bottom: 90px;
 }
-#works .illust .grid .item {
-  overflow: hidden;
-  height: 400px;
-}
-#works .illust .grid img{
-  height: 400px;
-  object-fit: cover;
-  object-position: right;
-  transition-duration: .3s;
-}
-#works .illust .grid img:hover {
-  transition-duration: .3s;
-  transform: scale(1.2);
-}
-#works .grid .item .btn {
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  position: relative;
-  bottom: calc(50%);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  transition: all 0.1s linear;
-  color: rgb(0, 0, 0,0.8);
-}
-#works .grid .item .btn:hover {
-  color: rgb(0, 0, 0);
-  background: rgb(255, 255, 255);
+#works .desc p {
+  font-weight: bold;
 }
 .webs ul {
   display: flex;
+  justify-content: center;
 }
 .webs ul li {
   position: relative;
@@ -205,9 +164,9 @@ h3 {
   font-size: 2.5rem;
   margin-left: 10px;
   border: 2px solid black;
-  width: 48%;
-  height: 400px;
-  line-height: 400px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
 }
 .webs ul li:before {
   position: absolute;
@@ -240,6 +199,35 @@ h3 {
 }
 .webs ul li:first-child {
   margin-left: 0;
+}
+#works .illust .grid{
+  display: grid;
+  gap: 30px;
+  grid-template-rows: repeat(3,300px);
+}
+#works .illust .grid .item {
+  border: 1px solid #24292e;
+  overflow: hidden;
+}
+#works .illust .grid .item p {
+  position: relative;
+  bottom: 300px;
+  font-size: 5rem;
+  color: #fff;
+  pointer-events: none;
+}
+#works .illust .grid img{
+  object-fit: cover;
+  transition-duration: .3s;
+}
+#works .illust .grid img:hover {
+  transition-duration: .3s;
+  transform: scale(1.1);
+}
+#contact {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto 120px auto;
 }
 #contact dl {
   display: flex;
