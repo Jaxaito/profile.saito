@@ -15,9 +15,14 @@ a {
 img {
     max-width: 100%;
 }
+.sec-title {
+    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
 #header {
     width: 100%;
-    background: #fff;
+    background: rgb(255, 255, 255,0.5);
     padding: 15px 30px;
     position: fixed;
 }
@@ -26,18 +31,25 @@ img {
     line-height: 1px;
 }
 #container {
-    padding: 0 15px;
+    padding: 90px 15px 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.grid {
-    display: grid;
-    padding-top: 89px;
-    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
-    align-items: center;
+.box {
+    display: flex;
+    width: 100%;
 }
-.grid div {
-    overflow: hidden;
+.box img {
+    height: 100vh;
 }
-.p h2{
-    font-size: 2rem;
-    margin: 20px 0;
+.box .text {
+    width: 50%;
+    padding: 10px 30px;
+    
+}
+.box .text p {
+    line-height: 2rem;
+}
+.box .text p:first-child {
+    font-size: 1.5rem;
 }
